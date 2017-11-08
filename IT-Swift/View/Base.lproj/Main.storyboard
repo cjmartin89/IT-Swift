@@ -63,7 +63,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="J8u-Aq-RlW"/>
+                    <navigationItem key="navigationItem" id="J8u-Aq-RlW">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="X9N-9G-I43"/>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="quotesSearchBar" destination="lwA-98-aH8" id="U36-bx-F3j"/>
                         <outlet property="quotesTableView" destination="NRk-sK-RJo" id="PTb-ix-6ad"/>
