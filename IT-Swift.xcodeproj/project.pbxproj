@@ -153,7 +153,7 @@
 				TargetAttributes = {
 					356FBDC91FB004CB00D97851 = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -392,12 +392,15 @@
 			baseConfigurationReference = 940D4063E7507759816A4797 /* Pods-IT-Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3P68SY6MD5;
 				INFOPLIST_FILE = "IT-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MTS.IT-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "06b52eee-2049-4836-b87d-b2296cc94054";
+				PROVISIONING_PROFILE_SPECIFIER = "MTS Provisioning Profile";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -408,12 +411,15 @@
 			baseConfigurationReference = 1103C78D8C3DD8DD232904AF /* Pods-IT-Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3P68SY6MD5;
 				INFOPLIST_FILE = "IT-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MTS.IT-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "06b52eee-2049-4836-b87d-b2296cc94054";
+				PROVISIONING_PROFILE_SPECIFIER = "MTS Provisioning Profile";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
