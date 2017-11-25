@@ -12,5 +12,5 @@ class Quote {
     
     var Quote : String = ""
     var Person : String = ""
-    var DateTime : Date = Date()
+    var PK : Int = 0
 }
