@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-class AddQuotesViewController: UIViewController {
+class AddQuotesViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var quoteTextField: UITextField!
     @IBOutlet weak var personTextField: UITextField!
@@ -18,6 +18,14 @@ class AddQuotesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.quoteTextField.delegate = self
+        self.personTextField.delegate = self
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     @IBAction func addQuoteButtonPressed(_ sender: Any) {
