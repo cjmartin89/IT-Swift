@@ -11,17 +11,12 @@ import Alamofire
 import SwiftyJSON
 
 class QuotesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate{
-    
-   var filteredQuotes = [Quote]()
-   var isSearching = false
-    
 
     //Instance Variables
     
+    var filteredQuotes = [Quote]()
+    var isSearching = false
     var quoteIndex : Int = 0
-    var updateQuoteText = ""
-    var updatePersonText = ""
-    var updatePK = 0
     
     //IB Outlets
     
@@ -50,11 +45,12 @@ class QuotesViewController: UIViewController, UITableViewDataSource, UITableView
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "updateQuoteSegue" {
-            
             let updateQuoteViewController = segue.destination as! UpdateQuoteViewController
-            updateQuoteViewController.quote = updateQuoteText
-            updateQuoteViewController.person = updatePersonText
-            updateQuoteViewController.PK = updatePK
+            if let indexPath = self.quotesTableView.indexPathForSelectedRow {
+            updateQuoteViewController.person = quotesArray[indexPath.row].Person
+            updateQuoteViewController.quote = quotesArray[indexPath.row].Quote
+            updateQuoteViewController.PK = quotesArray[indexPath.row].PK
+            }
         } else if segue.identifier == "AddQuotesSegue" {
             let addQuoteViewController = segue.destination as! AddQuotesViewController
         }
@@ -77,11 +73,25 @@ class QuotesViewController: UIViewController, UITableViewDataSource, UITableView
         //load data here
         self.quotesTableView.reloadData()
     }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 
 //    MARK: - TableView DataSource Methods
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
+        var text : String!
+        
+        if self.isSearching {
+            text = self.filteredQuotes[indexPath.row].Person
+        }
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath)
 
         cell.textLabel?.text = quotesArray[indexPath.row].Quote
@@ -98,14 +108,13 @@ class QuotesViewController: UIViewController, UITableViewDataSource, UITableView
         return quotesArray.count
     }
     
+    //Set up cell context actions
+    
+    //Set up delete action
+    
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let delete = UITableViewRowAction(style: .destructive, title: "Delete") { (action, indexPath) in
             // delete item at indexPath
-            let text : String!
-            
-            if self.isSearching {
-               text = self.filteredQuotes[indexPath.row].Person
-            }
             
             let primaryKey = quotesArray[indexPath.row].PK
             let DeleteQuote_URL = Quotes_URL + String(primaryKey)
@@ -118,31 +127,25 @@ class QuotesViewController: UIViewController, UITableViewDataSource, UITableView
 
             self.quotesTableView.reloadData()
         }
-        
-        func searchBar(_ quotesSearchBar : UISearchBar, textDidChange: String) {
-            if quotesSearchBar.text == nil || quotesSearchBar.text == "" {
-                isSearching = false
-                view.endEditing(true)
-                quotesTableView.reloadData()
-            } else {
-                isSearching = true
-                filteredQuotes = quotesArray.filter({$0.Person == quotesSearchBar.text!})
-                quotesTableView.reloadData()
-            }
+        return [delete]
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "updateQuoteSegue", sender: self)
+        quotesTableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func searchBar(_ quotesSearchBar : UISearchBar, textDidChange: String) {
+        if quotesSearchBar.text == nil || quotesSearchBar.text == "" {
+            isSearching = false
+            view.endEditing(true)
+            quotesTableView.reloadData()
+        } else {
+            isSearching = true
+            let lower = quotesSearchBar.text!.lowercased()
+            filteredQuotes = quotesArray.filter({$0.Person.lowercased().hasPrefix(lower)})
+            quotesTableView.reloadData()
         }
-        
-        let update = UITableViewRowAction(style: .normal, title: "Update") { (action, indexPath) in
-        
-            self.performSegue(withIdentifier: "updateQuoteSegue", sender: self)
-            self.updatePersonText = quotesArray[indexPath.row].Person
-            self.updateQuoteText = quotesArray[indexPath.row].Quote
-            self.updatePK = quotesArray[indexPath.row].PK
-            
-        }
-        
-        update.backgroundColor = UIColor.blue
-        
-        return [delete, update]
     }
     
     //MARK: - Networking

@@ -30,6 +30,9 @@ class UpdateQuoteViewController: UIViewController {
         updateQuotes()
     }
     
+    @IBAction func userTappedBackground(sender: AnyObject) {
+        view.endEditing(true)
+    }
     
     func updateQuotes() {
         
