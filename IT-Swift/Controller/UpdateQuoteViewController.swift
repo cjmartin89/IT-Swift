@@ -1,46 +1,39 @@
 //
-//  AddQuotesViewController.swift
+//  UpdateQuoteViewController.swift
 //  IT-Swift
 //
-//  Created by Chris Martin on 11/8/17.
+//  Created by Chris Martin on 11/25/17.
 //  Copyright © 2017 Martin Technical Solutions. All rights reserved.
 //
 
 import UIKit
 import Alamofire
-import SwiftyJSON
 
-class AddQuotesViewController: UIViewController, UITextFieldDelegate {
+class UpdateQuoteViewController: UIViewController {
 
     @IBOutlet weak var quoteTextField: UITextField!
     @IBOutlet weak var personTextField: UITextField!
-    @IBOutlet weak var addQuoteButton: UIButton!
-    @IBAction func userTappedBackground(sender: AnyObject) {
-        view.endEditing(true)
-    }
+    @IBOutlet weak var updateQuoteButton: UIButton!
+    
+    var quote = ""
+    var person = ""
+    var PK = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.quoteTextField.delegate = self
-        self.personTextField.delegate = self
-
+        quoteTextField.text = quote
+        personTextField.text = person
     }
     
-    func dismissKeyboard() {
-        view.endEditing(true)
-    }
-
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
+    @IBAction func updateQuotePressed(_ sender: Any) {
+        updateQuotes()
     }
     
-    @IBAction func addQuoteButtonPressed(_ sender: Any) {
-        addQuotes()
-    }
-
-    func addQuotes() {
+    
+    func updateQuotes() {
+        
+        let primaryKey = PK
         
         let text = quoteTextField.text
         let person = personTextField.text
@@ -56,19 +49,22 @@ class AddQuotesViewController: UIViewController, UITextFieldDelegate {
             "DateTime": convertedDate
         ]
         
-        let url = "http://18.220.140.97:8080/api/quotes/create/"
-        Alamofire.request(url, method:.post, parameters:parameters, encoding: JSONEncoding.default).responseString { response in
+        let url = Quotes_URL + String(primaryKey) + "/"
+        Alamofire.request(url, method:.put, parameters:parameters, encoding: JSONEncoding.default).responseString { response in
             switch response.result {
             case .success:
                 print(response)
-                quotesArray.append(quote)
+                if let i = quotesArray.index(where: {$0.PK == primaryKey}){
+                    print(i)
+                    quotesArray[i] = quote
+                }
                 NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
             case .failure(let error):
                 print("Failed to add quote \(error)")
             }
         }
         
-         self.navigationController?.popViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     
 }

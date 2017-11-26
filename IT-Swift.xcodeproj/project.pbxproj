@@ -14,6 +14,7 @@
 		356FBDD51FB004CB00D97851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 356FBDD41FB004CB00D97851 /* Assets.xcassets */; };
 		356FBDD81FB004CB00D97851 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 356FBDD61FB004CB00D97851 /* LaunchScreen.storyboard */; };
 		356FBDE31FB00A2400D97851 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356FBDE21FB00A2400D97851 /* Quote.swift */; };
+		35CBF66C1FCA54B900A07F6C /* UpdateQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CBF66B1FCA54B900A07F6C /* UpdateQuoteViewController.swift */; };
 		91A6D6A3E2425380B1C56B87 /* Pods_IT_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA6F19C5BD3560C6FF83CF8 /* Pods_IT_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		356FBDD71FB004CB00D97851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		356FBDD91FB004CB00D97851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		356FBDE21FB00A2400D97851 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		35CBF66B1FCA54B900A07F6C /* UpdateQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateQuoteViewController.swift; sourceTree = "<group>"; };
 		940D4063E7507759816A4797 /* Pods-IT-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IT-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IT-Swift/Pods-IT-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		9CA6F19C5BD3560C6FF83CF8 /* Pods_IT_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IT_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,6 +108,7 @@
 				356FBDCD1FB004CB00D97851 /* AppDelegate.swift */,
 				356FBDCF1FB004CB00D97851 /* QuotesViewController.swift */,
 				35625C1C1FB4133100B4E33D /* AddQuotesViewController.swift */,
+				35CBF66B1FCA54B900A07F6C /* UpdateQuoteViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				356FBDD01FB004CB00D97851 /* QuotesViewController.swift in Sources */,
 				35625C1D1FB4133100B4E33D /* AddQuotesViewController.swift in Sources */,
 				356FBDE31FB00A2400D97851 /* Quote.swift in Sources */,
+				35CBF66C1FCA54B900A07F6C /* UpdateQuoteViewController.swift in Sources */,
 				356FBDCE1FB004CB00D97851 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
