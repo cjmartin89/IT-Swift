@@ -73,15 +73,6 @@ class QuotesViewController: UIViewController, UITableViewDataSource, UITableView
         //load data here
         self.quotesTableView.reloadData()
     }
-    
-    func dismissKeyboard() {
-        view.endEditing(true)
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
 
 //    MARK: - TableView DataSource Methods
     
@@ -144,8 +135,13 @@ class QuotesViewController: UIViewController, UITableViewDataSource, UITableView
             isSearching = true
             let lower = quotesSearchBar.text!.lowercased()
             filteredQuotes = quotesArray.filter({$0.Person.lowercased().hasPrefix(lower)})
+            self.quotesSearchBar.endEditing(true)
             quotesTableView.reloadData()
         }
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        quotesSearchBar.resignFirstResponder() // hides the keyboard.
     }
     
     //MARK: - Networking
