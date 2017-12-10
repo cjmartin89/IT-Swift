@@ -9,5 +9,6 @@ target 'IT-Swift' do
     pod 'Alamofire'
     pod 'SwiftyJSON'
     pod 'SVProgressHUD'
+    pod 'HamburgerMenu'
 
 end

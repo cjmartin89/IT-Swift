@@ -143,6 +143,9 @@ class QuotesViewController: UIViewController, UITableViewDataSource, UITableView
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         quotesSearchBar.resignFirstResponder() // hides the keyboard.
     }
+    @IBAction func homeButtonPressed(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
     
     //MARK: - Networking
     /***************************************************************/

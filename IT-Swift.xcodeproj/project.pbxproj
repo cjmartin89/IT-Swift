@@ -15,6 +15,24 @@
 		356FBDD81FB004CB00D97851 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 356FBDD61FB004CB00D97851 /* LaunchScreen.storyboard */; };
 		356FBDE31FB00A2400D97851 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356FBDE21FB00A2400D97851 /* Quote.swift */; };
 		35CBF66C1FCA54B900A07F6C /* UpdateQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CBF66B1FCA54B900A07F6C /* UpdateQuoteViewController.swift */; };
+		35CBF67C1FCBCD2600A07F6C /* SoundBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CBF67B1FCBCD2600A07F6C /* SoundBoardViewController.swift */; };
+		35F949921FDC92FD0026C241 /* miamibeach-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F9498E1FDC92FC0026C241 /* miamibeach-logo.png */; };
+		35F949931FDC92FD0026C241 /* Hamburger.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 35F9498F1FDC92FC0026C241 /* Hamburger.PNG */; };
+		35F949941FDC92FD0026C241 /* MBWallMural_DeanFinal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 35F949901FDC92FC0026C241 /* MBWallMural_DeanFinal.jpg */; };
+		35F949951FDC92FD0026C241 /* hero-updated.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 35F949911FDC92FD0026C241 /* hero-updated.jpg */; };
+		35F949971FDC98540026C241 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F949961FDC98540026C241 /* HomeViewController.swift */; };
+		35F949A41FDCC8820026C241 /* Coffee Stir.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35F949981FDCC8810026C241 /* Coffee Stir.wav */; };
+		35F949A51FDCC8820026C241 /* I Cant.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35F949991FDCC8810026C241 /* I Cant.wav */; };
+		35F949A61FDCC8820026C241 /* Where Charles.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35F9499A1FDCC8810026C241 /* Where Charles.wav */; };
+		35F949A71FDCC8820026C241 /* Chihuahua.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35F9499B1FDCC8810026C241 /* Chihuahua.wav */; };
+		35F949A81FDCC8820026C241 /* Chihuahua 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35F9499C1FDCC8820026C241 /* Chihuahua 2.wav */; };
+		35F949A91FDCC8820026C241 /* Coffee Stir - Fast.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35F9499D1FDCC8820026C241 /* Coffee Stir - Fast.wav */; };
+		35F949AA1FDCC8820026C241 /* Force It.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35F9499E1FDCC8820026C241 /* Force It.wav */; };
+		35F949AB1FDCC8820026C241 /* Cocotaso.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35F9499F1FDCC8820026C241 /* Cocotaso.wav */; };
+		35F949AC1FDCC8820026C241 /* Charles - Earth Mother.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35F949A01FDCC8820026C241 /* Charles - Earth Mother.wav */; };
+		35F949AD1FDCC8820026C241 /* Frank - Right Now.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35F949A11FDCC8820026C241 /* Frank - Right Now.wav */; };
+		35F949AE1FDCC8820026C241 /* Huh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35F949A21FDCC8820026C241 /* Huh.wav */; };
+		35F949AF1FDCC8820026C241 /* What.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35F949A31FDCC8820026C241 /* What.wav */; };
 		91A6D6A3E2425380B1C56B87 /* Pods_IT_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA6F19C5BD3560C6FF83CF8 /* Pods_IT_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +48,24 @@
 		356FBDD91FB004CB00D97851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		356FBDE21FB00A2400D97851 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		35CBF66B1FCA54B900A07F6C /* UpdateQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateQuoteViewController.swift; sourceTree = "<group>"; };
+		35CBF67B1FCBCD2600A07F6C /* SoundBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBoardViewController.swift; sourceTree = "<group>"; };
+		35F9498E1FDC92FC0026C241 /* miamibeach-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "miamibeach-logo.png"; sourceTree = "<group>"; };
+		35F9498F1FDC92FC0026C241 /* Hamburger.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hamburger.PNG; sourceTree = "<group>"; };
+		35F949901FDC92FC0026C241 /* MBWallMural_DeanFinal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MBWallMural_DeanFinal.jpg; sourceTree = "<group>"; };
+		35F949911FDC92FD0026C241 /* hero-updated.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hero-updated.jpg"; sourceTree = "<group>"; };
+		35F949961FDC98540026C241 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		35F949981FDCC8810026C241 /* Coffee Stir.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Coffee Stir.wav"; sourceTree = "<group>"; };
+		35F949991FDCC8810026C241 /* I Cant.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "I Cant.wav"; sourceTree = "<group>"; };
+		35F9499A1FDCC8810026C241 /* Where Charles.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Where Charles.wav"; sourceTree = "<group>"; };
+		35F9499B1FDCC8810026C241 /* Chihuahua.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Chihuahua.wav; sourceTree = "<group>"; };
+		35F9499C1FDCC8820026C241 /* Chihuahua 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Chihuahua 2.wav"; sourceTree = "<group>"; };
+		35F9499D1FDCC8820026C241 /* Coffee Stir - Fast.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Coffee Stir - Fast.wav"; sourceTree = "<group>"; };
+		35F9499E1FDCC8820026C241 /* Force It.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Force It.wav"; sourceTree = "<group>"; };
+		35F9499F1FDCC8820026C241 /* Cocotaso.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cocotaso.wav; sourceTree = "<group>"; };
+		35F949A01FDCC8820026C241 /* Charles - Earth Mother.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Charles - Earth Mother.wav"; sourceTree = "<group>"; };
+		35F949A11FDCC8820026C241 /* Frank - Right Now.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Frank - Right Now.wav"; sourceTree = "<group>"; };
+		35F949A21FDCC8820026C241 /* Huh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Huh.wav; sourceTree = "<group>"; };
+		35F949A31FDCC8820026C241 /* What.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = What.wav; sourceTree = "<group>"; };
 		940D4063E7507759816A4797 /* Pods-IT-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IT-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IT-Swift/Pods-IT-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		9CA6F19C5BD3560C6FF83CF8 /* Pods_IT_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IT_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -76,6 +112,8 @@
 		356FBDCC1FB004CB00D97851 /* IT-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				35F9498D1FDC927F0026C241 /* Images */,
+				35CBF67E1FD3C6E100A07F6C /* Sound Files */,
 				356FBDE11FB004F900D97851 /* Controller */,
 				356FBDE01FB004F300D97851 /* View */,
 				356FBDDF1FB004DF00D97851 /* Model */,
@@ -89,6 +127,7 @@
 		356FBDDF1FB004DF00D97851 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				35CBF67D1FD3C6BD00A07F6C /* Sound Files */,
 				356FBDE21FB00A2400D97851 /* Quote.swift */,
 			);
 			path = Model;
@@ -109,8 +148,47 @@
 				356FBDCF1FB004CB00D97851 /* QuotesViewController.swift */,
 				35625C1C1FB4133100B4E33D /* AddQuotesViewController.swift */,
 				35CBF66B1FCA54B900A07F6C /* UpdateQuoteViewController.swift */,
+				35CBF67B1FCBCD2600A07F6C /* SoundBoardViewController.swift */,
+				35F949961FDC98540026C241 /* HomeViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		35CBF67D1FD3C6BD00A07F6C /* Sound Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Sound Files";
+			sourceTree = "<group>";
+		};
+		35CBF67E1FD3C6E100A07F6C /* Sound Files */ = {
+			isa = PBXGroup;
+			children = (
+				35F949A01FDCC8820026C241 /* Charles - Earth Mother.wav */,
+				35F949991FDCC8810026C241 /* I Cant.wav */,
+				35F949A21FDCC8820026C241 /* Huh.wav */,
+				35F9499F1FDCC8820026C241 /* Cocotaso.wav */,
+				35F9499D1FDCC8820026C241 /* Coffee Stir - Fast.wav */,
+				35F949981FDCC8810026C241 /* Coffee Stir.wav */,
+				35F9499E1FDCC8820026C241 /* Force It.wav */,
+				35F949A11FDCC8820026C241 /* Frank - Right Now.wav */,
+				35F949A31FDCC8820026C241 /* What.wav */,
+				35F9499A1FDCC8810026C241 /* Where Charles.wav */,
+				35F9499B1FDCC8810026C241 /* Chihuahua.wav */,
+				35F9499C1FDCC8820026C241 /* Chihuahua 2.wav */,
+			);
+			path = "Sound Files";
+			sourceTree = "<group>";
+		};
+		35F9498D1FDC927F0026C241 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				35F9498F1FDC92FC0026C241 /* Hamburger.PNG */,
+				35F949911FDC92FD0026C241 /* hero-updated.jpg */,
+				35F949901FDC92FC0026C241 /* MBWallMural_DeanFinal.jpg */,
+				35F9498E1FDC92FC0026C241 /* miamibeach-logo.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		BA93A7B918A27213B25257E3 /* Frameworks */ = {
@@ -183,9 +261,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35F949AF1FDCC8820026C241 /* What.wav in Resources */,
+				35F949951FDC92FD0026C241 /* hero-updated.jpg in Resources */,
+				35F949AA1FDCC8820026C241 /* Force It.wav in Resources */,
+				35F949AB1FDCC8820026C241 /* Cocotaso.wav in Resources */,
+				35F949AD1FDCC8820026C241 /* Frank - Right Now.wav in Resources */,
 				356FBDD81FB004CB00D97851 /* LaunchScreen.storyboard in Resources */,
+				35F949A91FDCC8820026C241 /* Coffee Stir - Fast.wav in Resources */,
+				35F949AE1FDCC8820026C241 /* Huh.wav in Resources */,
 				356FBDD51FB004CB00D97851 /* Assets.xcassets in Resources */,
+				35F949A41FDCC8820026C241 /* Coffee Stir.wav in Resources */,
+				35F949A71FDCC8820026C241 /* Chihuahua.wav in Resources */,
+				35F949A61FDCC8820026C241 /* Where Charles.wav in Resources */,
+				35F949A51FDCC8820026C241 /* I Cant.wav in Resources */,
+				35F949AC1FDCC8820026C241 /* Charles - Earth Mother.wav in Resources */,
+				35F949931FDC92FD0026C241 /* Hamburger.PNG in Resources */,
+				35F949921FDC92FD0026C241 /* miamibeach-logo.png in Resources */,
 				356FBDD31FB004CB00D97851 /* Main.storyboard in Resources */,
+				35F949941FDC92FD0026C241 /* MBWallMural_DeanFinal.jpg in Resources */,
+				35F949A81FDCC8820026C241 /* Chihuahua 2.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,12 +327,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-IT-Swift/Pods-IT-Swift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HamburgerButton/HamburgerButton.framework",
+				"${BUILT_PRODUCTS_DIR}/HamburgerMenu/HamburgerMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HamburgerButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HamburgerMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -256,9 +354,11 @@
 			files = (
 				356FBDD01FB004CB00D97851 /* QuotesViewController.swift in Sources */,
 				35625C1D1FB4133100B4E33D /* AddQuotesViewController.swift in Sources */,
+				35F949971FDC98540026C241 /* HomeViewController.swift in Sources */,
 				356FBDE31FB00A2400D97851 /* Quote.swift in Sources */,
 				35CBF66C1FCA54B900A07F6C /* UpdateQuoteViewController.swift in Sources */,
 				356FBDCE1FB004CB00D97851 /* AppDelegate.swift in Sources */,
+				35CBF67C1FCBCD2600A07F6C /* SoundBoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
