@@ -8,7 +8,5 @@ target 'IT-Swift' do
   # Pods for IT-Swift
     pod 'Alamofire'
     pod 'SwiftyJSON'
-    pod 'SVProgressHUD'
-    pod 'HamburgerMenu'
 
 end
