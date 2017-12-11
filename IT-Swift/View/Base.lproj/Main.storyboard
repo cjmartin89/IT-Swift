@@ -19,10 +19,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NRk-sK-RJo" userLabel="quotesTableView">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NRk-sK-RJo" userLabel="quotesTableView">
                                 <rect key="frame" x="0.0" y="120" width="375" height="547"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.69520789384841919" green="0.84240257740020752" blue="0.058938659727573395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexColor" red="0.69520789384841919" green="0.84240257740020752" blue="0.058938659727573395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LabelCell" textLabel="vpi-z3-gT0" detailTextLabel="suJ-he-bgn" style="IBUITableViewCellStyleSubtitle" id="RH4-yw-4ug">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -51,9 +55,14 @@
                                 </prototypes>
                                 <sections/>
                             </tableView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="lwA-98-aH8">
+                            <searchBar contentMode="redraw" searchBarStyle="prominent" placeholder="Search...." translatesAutoresizingMaskIntoConstraints="NO" id="lwA-98-aH8">
                                 <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                                <color key="tintColor" red="0.69520789384841919" green="0.84240257740020752" blue="0.058938659727573395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -69,6 +78,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="J8u-Aq-RlW">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="RXV-6p-JJF">
+                            <color key="tintColor" red="0.69520789384841919" green="0.84240257740020752" blue="0.058938659727573395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="homeButtonPressed:" destination="BYZ-38-t0r" id="PjB-mq-LDg"/>
                                 <segue destination="IsN-bq-zAU" kind="popoverPresentation" popoverAnchorBarButtonItem="RXV-6p-JJF" id="KwC-pC-rdc">
@@ -77,6 +87,7 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="X9N-9G-I43">
+                            <color key="tintColor" red="0.69520789384841919" green="0.84240257740020752" blue="0.058938659727573395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="Qmm-hC-sNx" kind="show" identifier="AddQuotesSegue" id="OHb-lQ-SMw"/>
                             </connections>
@@ -132,9 +143,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9QJ-i7-17e" userLabel="addQuoteButton">
                                 <rect key="frame" x="108" y="416" width="159" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.51043663843457621" green="0.75354548804439359" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Add Quote">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" red="0.69520789384841919" green="0.84240257740020752" blue="0.058938659727573395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="addQuoteButtonPressed:" destination="Qmm-hC-sNx" eventType="touchUpInside" id="pbs-cn-DOW"/>
@@ -161,10 +172,12 @@
         <scene sceneID="5pJ-RV-b2x">
             <objects>
                 <tabBarController id="xZh-Qc-U7e" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0bZ-By-DNu">
+                    <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0bZ-By-DNu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.69520789384841919" green="0.84240257740020752" blue="0.058938659727573395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.69520789384841919" green="0.84240257740020752" blue="0.058938659727573395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="DjS-qm-ACJ" kind="relationship" relationship="viewControllers" id="DoY-5V-1xg"/>
@@ -636,16 +649,15 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6z-mT-fQJ">
                                 <rect key="frame" x="112" y="411" width="150" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.51043663839999998" green="0.75354548799999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Update Quote">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Update Quote"/>
                                 <connections>
                                     <action selector="updateQuotePressed:" destination="wsT-4w-xxW" eventType="touchUpInside" id="QL1-RJ-quV"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.69520789384841919" green="0.84240257740020752" blue="0.058938659727573395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="uFy-Fz-6hw"/>
                         <connections>
                             <action selector="userTappedBackgroundWithSender:" destination="wsT-4w-xxW" eventType="touchDown" id="H6F-Ls-HIc"/>
@@ -669,6 +681,14 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gw3-i8-m8M">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.69520789384841919" green="0.84240257740020752" blue="0.058938659727573395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.69520789384841919" green="0.84240257740020752" blue="0.058938659727573395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.69520789384841919" green="0.84240257740020752" blue="0.058938659727573395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -699,12 +719,14 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcW-sJ-IRP">
                                 <rect key="frame" x="142.5" y="466" width="90" height="42"/>
-                                <color key="backgroundColor" red="0.69520789384841919" green="0.84240257740020752" blue="0.058938659727573395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="WQJ-u2-rrr"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="bGG-AB-hi2"/>
                                 </constraints>
-                                <state key="normal" title="Enter"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" red="0.69520789384841919" green="0.84240257740020752" blue="0.058938659727573395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="xZh-Qc-U7e" kind="show" id="DDO-LO-6kv"/>
                                 </connections>
@@ -735,6 +757,6 @@
         <image name="miamibeach-logo.png" width="823" height="108"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5bx-EF-KR2"/>
+        <segue reference="KwC-pC-rdc"/>
     </inferredMetricsTieBreakers>
 </document>

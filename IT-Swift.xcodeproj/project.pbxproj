@@ -127,7 +127,6 @@
 		356FBDDF1FB004DF00D97851 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				35CBF67D1FD3C6BD00A07F6C /* Sound Files */,
 				356FBDE21FB00A2400D97851 /* Quote.swift */,
 			);
 			path = Model;
@@ -152,13 +151,6 @@
 				35F949961FDC98540026C241 /* HomeViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		35CBF67D1FD3C6BD00A07F6C /* Sound Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Sound Files";
 			sourceTree = "<group>";
 		};
 		35CBF67E1FD3C6E100A07F6C /* Sound Files */ = {

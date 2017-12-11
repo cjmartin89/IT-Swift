@@ -51,8 +51,6 @@ class QuotesViewController: UIViewController, UITableViewDataSource, UITableView
             updateQuoteViewController.quote = quotesArray[indexPath.row].Quote
             updateQuoteViewController.PK = quotesArray[indexPath.row].PK
             }
-        } else if segue.identifier == "AddQuotesSegue" {
-            let addQuoteViewController = segue.destination as! AddQuotesViewController
         }
         
     }
@@ -75,18 +73,21 @@ class QuotesViewController: UIViewController, UITableViewDataSource, UITableView
     }
 
 //    MARK: - TableView DataSource Methods
-    
+// Check here for search issues
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var text : String!
-        
-        if self.isSearching {
-            text = self.filteredQuotes[indexPath.row].Person
-        }
+        let text : String!
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath)
 
-        cell.textLabel?.text = quotesArray[indexPath.row].Quote
-        cell.detailTextLabel?.text = quotesArray[indexPath.row].Person
+        if self.isSearching {
+            //            text = self.filteredQuotes[indexPath.row].Person
+            cell.textLabel?.text = self.filteredQuotes[indexPath.row].Quote
+            cell.detailTextLabel?.text = self.filteredQuotes[indexPath.row].Person
+        } else {
+            cell.textLabel?.text = quotesArray[indexPath.row].Quote
+            cell.detailTextLabel?.text = quotesArray[indexPath.row].Person
+        }
+        
 
         return cell
     }
@@ -96,6 +97,7 @@ class QuotesViewController: UIViewController, UITableViewDataSource, UITableView
         if isSearching {
             return filteredQuotes.count
         }
+        
         return quotesArray.count
     }
     
@@ -129,13 +131,12 @@ class QuotesViewController: UIViewController, UITableViewDataSource, UITableView
     func searchBar(_ quotesSearchBar : UISearchBar, textDidChange: String) {
         if quotesSearchBar.text == nil || quotesSearchBar.text == "" {
             isSearching = false
-            view.endEditing(true)
             quotesTableView.reloadData()
         } else {
             isSearching = true
+            self.quotesSearchBar.showsCancelButton = true
             let lower = quotesSearchBar.text!.lowercased()
             filteredQuotes = quotesArray.filter({$0.Person.lowercased().hasPrefix(lower)})
-            self.quotesSearchBar.endEditing(true)
             quotesTableView.reloadData()
         }
     }
@@ -143,6 +144,18 @@ class QuotesViewController: UIViewController, UITableViewDataSource, UITableView
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         quotesSearchBar.resignFirstResponder() // hides the keyboard.
     }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        // Stop doing the search stuff
+        // and clear the text in the search bar
+        searchBar.text = ""
+        // Hide the cancel button
+        searchBar.showsCancelButton = false
+        // You could also change the position, frame etc of the searchBar
+        retrieveQuotes(url: "http://18.220.140.97:8080/api/quotes/")
+        quotesSearchBar.resignFirstResponder()
+    }
+    
     @IBAction func homeButtonPressed(_ sender: Any) {
         self.navigationController?.popToRootViewController(animated: true)
     }
