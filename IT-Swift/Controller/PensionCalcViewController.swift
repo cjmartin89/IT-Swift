@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PensionCalcViewController: UIViewController {
+class PensionCalcViewController: UIViewController, UITextFieldDelegate {
 
     var shortestTime : Int = 0
     var formattedFutureSalary : String = ""
@@ -24,12 +24,19 @@ class PensionCalcViewController: UIViewController {
     @IBOutlet weak var finalEarningsResult: UILabel!
     @IBOutlet weak var retirementAgeResult: UILabel!
     @IBOutlet weak var yearsToRetirementTextField: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.ageInputTextField.delegate = self
+        self.yearsOfServiceTextField.delegate = self
+        self.salaryTextField.delegate = self
     }
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
     @IBAction func submitButtonPressed(_ sender: UIButton) {
         
@@ -39,6 +46,11 @@ class PensionCalcViewController: UIViewController {
         finalEarningsResult.text = formatCurrencyValue(numberToFormat: calcFAE())
         retirementAgeResult.text = "\(calcRetAge())"
         yearsToRetirementTextField.text = "You may retire in : \(shortestTime) years"
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     func calcRetYear() -> String {

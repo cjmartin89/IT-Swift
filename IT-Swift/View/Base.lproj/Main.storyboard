@@ -681,7 +681,7 @@
         <!--Pension Calc View Controller-->
         <scene sceneID="9ji-71-VBl">
             <objects>
-                <viewController id="HJO-kh-5UA" customClass="PensionCalcViewController" customModule="IT_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HJO-kh-5UA" customClass="PensionCalcViewController" customModule="IT_Swift" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DwS-Nl-sYG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -904,6 +904,7 @@
                         <outlet property="retYearResult" destination="Pad-Uu-the" id="WGr-Uj-e6D"/>
                         <outlet property="retirementAgeResult" destination="dGv-gZ-pJe" id="0n2-LR-2Vb"/>
                         <outlet property="salaryTextField" destination="voc-PL-pef" id="TYP-sa-1kT"/>
+                        <outlet property="view" destination="DwS-Nl-sYG" id="CsK-Kl-s2Z"/>
                         <outlet property="yearsOfServiceTextField" destination="Nm7-L9-e9y" id="TrO-I1-rw4"/>
                         <outlet property="yearsToRetirementTextField" destination="fAl-JR-wZn" id="f5N-vF-ODz"/>
                     </connections>
@@ -1059,8 +1060,7 @@
         <image name="miamibeach-logo.png" width="823" height="108"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GFM-W2-2P1"/>
-        <segue reference="5bx-EF-KR2"/>
+        <segue reference="KwC-pC-rdc"/>
         <segue reference="hUF-60-FyI"/>
         <segue reference="UkP-fG-ISz"/>
     </inferredMetricsTieBreakers>
