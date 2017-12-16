@@ -14,6 +14,23 @@
 		356FBDD51FB004CB00D97851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 356FBDD41FB004CB00D97851 /* Assets.xcassets */; };
 		356FBDD81FB004CB00D97851 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 356FBDD61FB004CB00D97851 /* LaunchScreen.storyboard */; };
 		356FBDE31FB00A2400D97851 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356FBDE21FB00A2400D97851 /* Quote.swift */; };
+		35C8027E1FE4EB0400774752 /* Lunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35C8026D1FE4EAF900774752 /* Lunch.wav */; };
+		35C8027F1FE4EB0400774752 /* Monkey.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35C8026E1FE4EAF900774752 /* Monkey.wav */; };
+		35C802801FE4EB0400774752 /* QRU.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35C8026F1FE4EAF900774752 /* QRU.wav */; };
+		35C802811FE4EB0400774752 /* Mmmm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35C802701FE4EAFA00774752 /* Mmmm.wav */; };
+		35C802821FE4EB0400774752 /* Lil Boy.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35C802711FE4EAFA00774752 /* Lil Boy.wav */; };
+		35C802831FE4EB0400774752 /* Coffee Stir.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35C802721FE4EAFB00774752 /* Coffee Stir.wav */; };
+		35C802841FE4EB0400774752 /* Goodbye.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35C802731FE4EAFC00774752 /* Goodbye.wav */; };
+		35C802851FE4EB0400774752 /* Protocol.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35C802741FE4EAFD00774752 /* Protocol.wav */; };
+		35C802861FE4EB0400774752 /* That Big.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35C802751FE4EAFE00774752 /* That Big.wav */; };
+		35C802871FE4EB0400774752 /* Boys.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35C802761FE4EAFE00774752 /* Boys.wav */; };
+		35C802881FE4EB0400774752 /* Yell.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35C802771FE4EAFF00774752 /* Yell.wav */; };
+		35C802891FE4EB0400774752 /* Excited.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35C802781FE4EB0000774752 /* Excited.wav */; };
+		35C8028A1FE4EB0400774752 /* Doing This.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35C802791FE4EB0000774752 /* Doing This.wav */; };
+		35C8028B1FE4EB0400774752 /* I Can't.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35C8027A1FE4EB0100774752 /* I Can't.wav */; };
+		35C8028C1FE4EB0400774752 /* Handle It.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35C8027B1FE4EB0200774752 /* Handle It.wav */; };
+		35C8028D1FE4EB0400774752 /* Serious.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35C8027C1FE4EB0300774752 /* Serious.wav */; };
+		35C8028E1FE4EB0400774752 /* Laugh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35C8027D1FE4EB0300774752 /* Laugh.wav */; };
 		35CBF66C1FCA54B900A07F6C /* UpdateQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CBF66B1FCA54B900A07F6C /* UpdateQuoteViewController.swift */; };
 		35CBF67C1FCBCD2600A07F6C /* SoundBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CBF67B1FCBCD2600A07F6C /* SoundBoardViewController.swift */; };
 		35F949921FDC92FD0026C241 /* miamibeach-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F9498E1FDC92FC0026C241 /* miamibeach-logo.png */; };
@@ -21,18 +38,13 @@
 		35F949941FDC92FD0026C241 /* MBWallMural_DeanFinal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 35F949901FDC92FC0026C241 /* MBWallMural_DeanFinal.jpg */; };
 		35F949951FDC92FD0026C241 /* hero-updated.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 35F949911FDC92FD0026C241 /* hero-updated.jpg */; };
 		35F949971FDC98540026C241 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F949961FDC98540026C241 /* HomeViewController.swift */; };
-		35F949A41FDCC8820026C241 /* Coffee Stir.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35F949981FDCC8810026C241 /* Coffee Stir.wav */; };
-		35F949A51FDCC8820026C241 /* I Cant.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35F949991FDCC8810026C241 /* I Cant.wav */; };
 		35F949A61FDCC8820026C241 /* Where Charles.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35F9499A1FDCC8810026C241 /* Where Charles.wav */; };
-		35F949A71FDCC8820026C241 /* Chihuahua.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35F9499B1FDCC8810026C241 /* Chihuahua.wav */; };
 		35F949A81FDCC8820026C241 /* Chihuahua 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35F9499C1FDCC8820026C241 /* Chihuahua 2.wav */; };
-		35F949A91FDCC8820026C241 /* Coffee Stir - Fast.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35F9499D1FDCC8820026C241 /* Coffee Stir - Fast.wav */; };
 		35F949AA1FDCC8820026C241 /* Force It.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35F9499E1FDCC8820026C241 /* Force It.wav */; };
 		35F949AB1FDCC8820026C241 /* Cocotaso.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35F9499F1FDCC8820026C241 /* Cocotaso.wav */; };
-		35F949AC1FDCC8820026C241 /* Charles - Earth Mother.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35F949A01FDCC8820026C241 /* Charles - Earth Mother.wav */; };
-		35F949AD1FDCC8820026C241 /* Frank - Right Now.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35F949A11FDCC8820026C241 /* Frank - Right Now.wav */; };
-		35F949AE1FDCC8820026C241 /* Huh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35F949A21FDCC8820026C241 /* Huh.wav */; };
 		35F949AF1FDCC8820026C241 /* What.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35F949A31FDCC8820026C241 /* What.wav */; };
+		35F949B11FDE518F0026C241 /* PensionCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F949B01FDE518F0026C241 /* PensionCalcViewController.swift */; };
+		35F949B31FE230920026C241 /* PensMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F949B21FE230920026C241 /* PensMenuViewController.swift */; };
 		91A6D6A3E2425380B1C56B87 /* Pods_IT_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA6F19C5BD3560C6FF83CF8 /* Pods_IT_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +59,23 @@
 		356FBDD71FB004CB00D97851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		356FBDD91FB004CB00D97851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		356FBDE21FB00A2400D97851 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		35C8026D1FE4EAF900774752 /* Lunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Lunch.wav; sourceTree = "<group>"; };
+		35C8026E1FE4EAF900774752 /* Monkey.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Monkey.wav; sourceTree = "<group>"; };
+		35C8026F1FE4EAF900774752 /* QRU.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = QRU.wav; sourceTree = "<group>"; };
+		35C802701FE4EAFA00774752 /* Mmmm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Mmmm.wav; sourceTree = "<group>"; };
+		35C802711FE4EAFA00774752 /* Lil Boy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Lil Boy.wav"; sourceTree = "<group>"; };
+		35C802721FE4EAFB00774752 /* Coffee Stir.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Coffee Stir.wav"; sourceTree = "<group>"; };
+		35C802731FE4EAFC00774752 /* Goodbye.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Goodbye.wav; sourceTree = "<group>"; };
+		35C802741FE4EAFD00774752 /* Protocol.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Protocol.wav; sourceTree = "<group>"; };
+		35C802751FE4EAFE00774752 /* That Big.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "That Big.wav"; sourceTree = "<group>"; };
+		35C802761FE4EAFE00774752 /* Boys.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Boys.wav; sourceTree = "<group>"; };
+		35C802771FE4EAFF00774752 /* Yell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Yell.wav; sourceTree = "<group>"; };
+		35C802781FE4EB0000774752 /* Excited.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Excited.wav; sourceTree = "<group>"; };
+		35C802791FE4EB0000774752 /* Doing This.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Doing This.wav"; sourceTree = "<group>"; };
+		35C8027A1FE4EB0100774752 /* I Can't.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "I Can't.wav"; sourceTree = "<group>"; };
+		35C8027B1FE4EB0200774752 /* Handle It.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Handle It.wav"; sourceTree = "<group>"; };
+		35C8027C1FE4EB0300774752 /* Serious.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Serious.wav; sourceTree = "<group>"; };
+		35C8027D1FE4EB0300774752 /* Laugh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Laugh.wav; sourceTree = "<group>"; };
 		35CBF66B1FCA54B900A07F6C /* UpdateQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateQuoteViewController.swift; sourceTree = "<group>"; };
 		35CBF67B1FCBCD2600A07F6C /* SoundBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBoardViewController.swift; sourceTree = "<group>"; };
 		35F9498E1FDC92FC0026C241 /* miamibeach-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "miamibeach-logo.png"; sourceTree = "<group>"; };
@@ -54,18 +83,13 @@
 		35F949901FDC92FC0026C241 /* MBWallMural_DeanFinal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MBWallMural_DeanFinal.jpg; sourceTree = "<group>"; };
 		35F949911FDC92FD0026C241 /* hero-updated.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hero-updated.jpg"; sourceTree = "<group>"; };
 		35F949961FDC98540026C241 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		35F949981FDCC8810026C241 /* Coffee Stir.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Coffee Stir.wav"; sourceTree = "<group>"; };
-		35F949991FDCC8810026C241 /* I Cant.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "I Cant.wav"; sourceTree = "<group>"; };
 		35F9499A1FDCC8810026C241 /* Where Charles.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Where Charles.wav"; sourceTree = "<group>"; };
-		35F9499B1FDCC8810026C241 /* Chihuahua.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Chihuahua.wav; sourceTree = "<group>"; };
 		35F9499C1FDCC8820026C241 /* Chihuahua 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Chihuahua 2.wav"; sourceTree = "<group>"; };
-		35F9499D1FDCC8820026C241 /* Coffee Stir - Fast.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Coffee Stir - Fast.wav"; sourceTree = "<group>"; };
 		35F9499E1FDCC8820026C241 /* Force It.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Force It.wav"; sourceTree = "<group>"; };
 		35F9499F1FDCC8820026C241 /* Cocotaso.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cocotaso.wav; sourceTree = "<group>"; };
-		35F949A01FDCC8820026C241 /* Charles - Earth Mother.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Charles - Earth Mother.wav"; sourceTree = "<group>"; };
-		35F949A11FDCC8820026C241 /* Frank - Right Now.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Frank - Right Now.wav"; sourceTree = "<group>"; };
-		35F949A21FDCC8820026C241 /* Huh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Huh.wav; sourceTree = "<group>"; };
 		35F949A31FDCC8820026C241 /* What.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = What.wav; sourceTree = "<group>"; };
+		35F949B01FDE518F0026C241 /* PensionCalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PensionCalcViewController.swift; sourceTree = "<group>"; };
+		35F949B21FE230920026C241 /* PensMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PensMenuViewController.swift; sourceTree = "<group>"; };
 		940D4063E7507759816A4797 /* Pods-IT-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IT-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IT-Swift/Pods-IT-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		9CA6F19C5BD3560C6FF83CF8 /* Pods_IT_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IT_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -149,6 +173,8 @@
 				35CBF66B1FCA54B900A07F6C /* UpdateQuoteViewController.swift */,
 				35CBF67B1FCBCD2600A07F6C /* SoundBoardViewController.swift */,
 				35F949961FDC98540026C241 /* HomeViewController.swift */,
+				35F949B01FDE518F0026C241 /* PensionCalcViewController.swift */,
+				35F949B21FE230920026C241 /* PensMenuViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -156,17 +182,27 @@
 		35CBF67E1FD3C6E100A07F6C /* Sound Files */ = {
 			isa = PBXGroup;
 			children = (
-				35F949A01FDCC8820026C241 /* Charles - Earth Mother.wav */,
-				35F949991FDCC8810026C241 /* I Cant.wav */,
-				35F949A21FDCC8820026C241 /* Huh.wav */,
+				35C802761FE4EAFE00774752 /* Boys.wav */,
+				35C802721FE4EAFB00774752 /* Coffee Stir.wav */,
+				35C802791FE4EB0000774752 /* Doing This.wav */,
+				35C802781FE4EB0000774752 /* Excited.wav */,
+				35C802731FE4EAFC00774752 /* Goodbye.wav */,
+				35C8027B1FE4EB0200774752 /* Handle It.wav */,
+				35C8027A1FE4EB0100774752 /* I Can't.wav */,
+				35C8027D1FE4EB0300774752 /* Laugh.wav */,
+				35C802711FE4EAFA00774752 /* Lil Boy.wav */,
+				35C8026D1FE4EAF900774752 /* Lunch.wav */,
+				35C802701FE4EAFA00774752 /* Mmmm.wav */,
+				35C8026E1FE4EAF900774752 /* Monkey.wav */,
+				35C802741FE4EAFD00774752 /* Protocol.wav */,
+				35C8026F1FE4EAF900774752 /* QRU.wav */,
+				35C8027C1FE4EB0300774752 /* Serious.wav */,
+				35C802751FE4EAFE00774752 /* That Big.wav */,
+				35C802771FE4EAFF00774752 /* Yell.wav */,
 				35F9499F1FDCC8820026C241 /* Cocotaso.wav */,
-				35F9499D1FDCC8820026C241 /* Coffee Stir - Fast.wav */,
-				35F949981FDCC8810026C241 /* Coffee Stir.wav */,
 				35F9499E1FDCC8820026C241 /* Force It.wav */,
-				35F949A11FDCC8820026C241 /* Frank - Right Now.wav */,
 				35F949A31FDCC8820026C241 /* What.wav */,
 				35F9499A1FDCC8810026C241 /* Where Charles.wav */,
-				35F9499B1FDCC8810026C241 /* Chihuahua.wav */,
 				35F9499C1FDCC8820026C241 /* Chihuahua 2.wav */,
 			);
 			path = "Sound Files";
@@ -254,24 +290,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				35F949AF1FDCC8820026C241 /* What.wav in Resources */,
+				35C8027E1FE4EB0400774752 /* Lunch.wav in Resources */,
 				35F949951FDC92FD0026C241 /* hero-updated.jpg in Resources */,
 				35F949AA1FDCC8820026C241 /* Force It.wav in Resources */,
+				35C802861FE4EB0400774752 /* That Big.wav in Resources */,
 				35F949AB1FDCC8820026C241 /* Cocotaso.wav in Resources */,
-				35F949AD1FDCC8820026C241 /* Frank - Right Now.wav in Resources */,
+				35C802841FE4EB0400774752 /* Goodbye.wav in Resources */,
 				356FBDD81FB004CB00D97851 /* LaunchScreen.storyboard in Resources */,
-				35F949A91FDCC8820026C241 /* Coffee Stir - Fast.wav in Resources */,
-				35F949AE1FDCC8820026C241 /* Huh.wav in Resources */,
+				35C802801FE4EB0400774752 /* QRU.wav in Resources */,
+				35C802821FE4EB0400774752 /* Lil Boy.wav in Resources */,
 				356FBDD51FB004CB00D97851 /* Assets.xcassets in Resources */,
-				35F949A41FDCC8820026C241 /* Coffee Stir.wav in Resources */,
-				35F949A71FDCC8820026C241 /* Chihuahua.wav in Resources */,
+				35C802881FE4EB0400774752 /* Yell.wav in Resources */,
+				35C8028C1FE4EB0400774752 /* Handle It.wav in Resources */,
+				35C802851FE4EB0400774752 /* Protocol.wav in Resources */,
+				35C802891FE4EB0400774752 /* Excited.wav in Resources */,
+				35C802811FE4EB0400774752 /* Mmmm.wav in Resources */,
 				35F949A61FDCC8820026C241 /* Where Charles.wav in Resources */,
-				35F949A51FDCC8820026C241 /* I Cant.wav in Resources */,
-				35F949AC1FDCC8820026C241 /* Charles - Earth Mother.wav in Resources */,
 				35F949931FDC92FD0026C241 /* Hamburger.PNG in Resources */,
+				35C8028B1FE4EB0400774752 /* I Can't.wav in Resources */,
 				35F949921FDC92FD0026C241 /* miamibeach-logo.png in Resources */,
+				35C802831FE4EB0400774752 /* Coffee Stir.wav in Resources */,
 				356FBDD31FB004CB00D97851 /* Main.storyboard in Resources */,
+				35C8028A1FE4EB0400774752 /* Doing This.wav in Resources */,
 				35F949941FDC92FD0026C241 /* MBWallMural_DeanFinal.jpg in Resources */,
+				35C8028E1FE4EB0400774752 /* Laugh.wav in Resources */,
+				35C802871FE4EB0400774752 /* Boys.wav in Resources */,
+				35C8028D1FE4EB0400774752 /* Serious.wav in Resources */,
 				35F949A81FDCC8820026C241 /* Chihuahua 2.wav in Resources */,
+				35C8027F1FE4EB0400774752 /* Monkey.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +384,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35F949B11FDE518F0026C241 /* PensionCalcViewController.swift in Sources */,
+				35F949B31FE230920026C241 /* PensMenuViewController.swift in Sources */,
 				356FBDD01FB004CB00D97851 /* QuotesViewController.swift in Sources */,
 				35625C1D1FB4133100B4E33D /* AddQuotesViewController.swift in Sources */,
 				35F949971FDC98540026C241 /* HomeViewController.swift in Sources */,
