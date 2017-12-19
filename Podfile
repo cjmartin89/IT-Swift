@@ -8,5 +8,6 @@ target 'IT-Swift' do
   # Pods for IT-Swift
     pod 'Alamofire'
     pod 'SwiftyJSON'
+    pod 'AppCenter'
 
 end
