@@ -13,6 +13,7 @@ class PensionCalcViewController: UIViewController, UITextFieldDelegate {
     var shortestTime : Int = 0
     var formattedFutureSalary : String = ""
     var earningsArray : [Double] = []
+    var dateString : String = ""
     
     @IBOutlet weak var ageInputTextField: UITextField!
     @IBOutlet weak var yearsOfServiceTextField: UITextField!
@@ -45,6 +46,7 @@ class PensionCalcViewController: UIViewController, UITextFieldDelegate {
         retSalaryResult.text = calcRetEarnings()
         finalEarningsResult.text = formatCurrencyValue(numberToFormat: calcFAE())
         retirementAgeResult.text = "\(calcRetAge())"
+        print(calcRetAge())
         yearsToRetirementTextField.text = "You may retire in : \(shortestTime) years"
     }
     
@@ -53,11 +55,11 @@ class PensionCalcViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    func calcRetYear() -> String {
+    func calcRetYear() -> String? {
         
         let age = Int(ageInputTextField.text!)
         let yearsOfService = Int(yearsOfServiceTextField.text!)
-        
+ 
         var dateComponents = DateComponents()
         let currentDate = Date()
         
@@ -72,8 +74,8 @@ class PensionCalcViewController: UIViewController, UITextFieldDelegate {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy"
         
-        let dateString = formatter.string(from: retYear!)
-        
+        dateString = formatter.string(from: retYear!)
+    
         return dateString
     }
     
