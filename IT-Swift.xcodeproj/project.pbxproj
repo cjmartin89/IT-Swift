@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		354E60221FF3435B00BE7615 /* SoundBoard2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354E60211FF3435B00BE7615 /* SoundBoard2ViewController.swift */; };
+		354E60251FF344BF00BE7615 /* Buen Provecho.wav in Resources */ = {isa = PBXBuildFile; fileRef = 354E60231FF344BE00BE7615 /* Buen Provecho.wav */; };
+		354E60261FF344BF00BE7615 /* Flea Bags.wav in Resources */ = {isa = PBXBuildFile; fileRef = 354E60241FF344BF00BE7615 /* Flea Bags.wav */; };
+		354E60321FF346A100BE7615 /* Get Ya.wav in Resources */ = {isa = PBXBuildFile; fileRef = 354E60271FF3469E00BE7615 /* Get Ya.wav */; };
+		354E60331FF346A100BE7615 /* Eric.wav in Resources */ = {isa = PBXBuildFile; fileRef = 354E60281FF3469E00BE7615 /* Eric.wav */; };
+		354E60341FF346A100BE7615 /* Leaves.wav in Resources */ = {isa = PBXBuildFile; fileRef = 354E60291FF3469E00BE7615 /* Leaves.wav */; };
+		354E60351FF346A100BE7615 /* Scares Me.wav in Resources */ = {isa = PBXBuildFile; fileRef = 354E602A1FF3469F00BE7615 /* Scares Me.wav */; };
+		354E60361FF346A100BE7615 /* Check.wav in Resources */ = {isa = PBXBuildFile; fileRef = 354E602B1FF3469F00BE7615 /* Check.wav */; };
+		354E60371FF346A100BE7615 /* Cry.wav in Resources */ = {isa = PBXBuildFile; fileRef = 354E602C1FF3469F00BE7615 /* Cry.wav */; };
+		354E60381FF346A100BE7615 /* Too Close.wav in Resources */ = {isa = PBXBuildFile; fileRef = 354E602D1FF346A000BE7615 /* Too Close.wav */; };
+		354E60391FF346A100BE7615 /* For What.wav in Resources */ = {isa = PBXBuildFile; fileRef = 354E602E1FF346A000BE7615 /* For What.wav */; };
+		354E603A1FF346A100BE7615 /* Morenga.wav in Resources */ = {isa = PBXBuildFile; fileRef = 354E602F1FF346A000BE7615 /* Morenga.wav */; };
+		354E603B1FF346A100BE7615 /* Bully.wav in Resources */ = {isa = PBXBuildFile; fileRef = 354E60301FF346A000BE7615 /* Bully.wav */; };
+		354E603C1FF346A100BE7615 /* Hell.wav in Resources */ = {isa = PBXBuildFile; fileRef = 354E60311FF346A000BE7615 /* Hell.wav */; };
 		35625C1D1FB4133100B4E33D /* AddQuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35625C1C1FB4133100B4E33D /* AddQuotesViewController.swift */; };
 		356FBDCE1FB004CB00D97851 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356FBDCD1FB004CB00D97851 /* AppDelegate.swift */; };
 		356FBDD01FB004CB00D97851 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356FBDCF1FB004CB00D97851 /* QuotesViewController.swift */; };
@@ -50,6 +64,20 @@
 
 /* Begin PBXFileReference section */
 		1103C78D8C3DD8DD232904AF /* Pods-IT-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IT-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-IT-Swift/Pods-IT-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		354E60211FF3435B00BE7615 /* SoundBoard2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBoard2ViewController.swift; sourceTree = "<group>"; };
+		354E60231FF344BE00BE7615 /* Buen Provecho.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Buen Provecho.wav"; sourceTree = "<group>"; };
+		354E60241FF344BF00BE7615 /* Flea Bags.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Flea Bags.wav"; sourceTree = "<group>"; };
+		354E60271FF3469E00BE7615 /* Get Ya.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Get Ya.wav"; sourceTree = "<group>"; };
+		354E60281FF3469E00BE7615 /* Eric.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Eric.wav; sourceTree = "<group>"; };
+		354E60291FF3469E00BE7615 /* Leaves.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Leaves.wav; sourceTree = "<group>"; };
+		354E602A1FF3469F00BE7615 /* Scares Me.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Scares Me.wav"; sourceTree = "<group>"; };
+		354E602B1FF3469F00BE7615 /* Check.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Check.wav; sourceTree = "<group>"; };
+		354E602C1FF3469F00BE7615 /* Cry.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cry.wav; sourceTree = "<group>"; };
+		354E602D1FF346A000BE7615 /* Too Close.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Too Close.wav"; sourceTree = "<group>"; };
+		354E602E1FF346A000BE7615 /* For What.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "For What.wav"; sourceTree = "<group>"; };
+		354E602F1FF346A000BE7615 /* Morenga.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Morenga.wav; sourceTree = "<group>"; };
+		354E60301FF346A000BE7615 /* Bully.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bully.wav; sourceTree = "<group>"; };
+		354E60311FF346A000BE7615 /* Hell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Hell.wav; sourceTree = "<group>"; };
 		35625C1C1FB4133100B4E33D /* AddQuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuotesViewController.swift; sourceTree = "<group>"; };
 		356FBDCA1FB004CB00D97851 /* IT-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IT-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		356FBDCD1FB004CB00D97851 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +203,7 @@
 				35F949961FDC98540026C241 /* HomeViewController.swift */,
 				35F949B01FDE518F0026C241 /* PensionCalcViewController.swift */,
 				35F949B21FE230920026C241 /* PensMenuViewController.swift */,
+				354E60211FF3435B00BE7615 /* SoundBoard2ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,6 +211,19 @@
 		35CBF67E1FD3C6E100A07F6C /* Sound Files */ = {
 			isa = PBXGroup;
 			children = (
+				354E60301FF346A000BE7615 /* Bully.wav */,
+				354E602B1FF3469F00BE7615 /* Check.wav */,
+				354E602C1FF3469F00BE7615 /* Cry.wav */,
+				354E60281FF3469E00BE7615 /* Eric.wav */,
+				354E602E1FF346A000BE7615 /* For What.wav */,
+				354E60271FF3469E00BE7615 /* Get Ya.wav */,
+				354E60311FF346A000BE7615 /* Hell.wav */,
+				354E60291FF3469E00BE7615 /* Leaves.wav */,
+				354E602F1FF346A000BE7615 /* Morenga.wav */,
+				354E602A1FF3469F00BE7615 /* Scares Me.wav */,
+				354E602D1FF346A000BE7615 /* Too Close.wav */,
+				354E60231FF344BE00BE7615 /* Buen Provecho.wav */,
+				354E60241FF344BF00BE7615 /* Flea Bags.wav */,
 				35C802761FE4EAFE00774752 /* Boys.wav */,
 				35C802721FE4EAFB00774752 /* Coffee Stir.wav */,
 				35C802791FE4EB0000774752 /* Doing This.wav */,
@@ -289,31 +331,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354E60321FF346A100BE7615 /* Get Ya.wav in Resources */,
 				35F949AF1FDCC8820026C241 /* What.wav in Resources */,
 				35C8027E1FE4EB0400774752 /* Lunch.wav in Resources */,
 				35F949951FDC92FD0026C241 /* hero-updated.jpg in Resources */,
 				35F949AA1FDCC8820026C241 /* Force It.wav in Resources */,
+				354E60381FF346A100BE7615 /* Too Close.wav in Resources */,
 				35C802861FE4EB0400774752 /* That Big.wav in Resources */,
 				35F949AB1FDCC8820026C241 /* Cocotaso.wav in Resources */,
+				354E60361FF346A100BE7615 /* Check.wav in Resources */,
 				35C802841FE4EB0400774752 /* Goodbye.wav in Resources */,
+				354E60351FF346A100BE7615 /* Scares Me.wav in Resources */,
 				356FBDD81FB004CB00D97851 /* LaunchScreen.storyboard in Resources */,
 				35C802801FE4EB0400774752 /* QRU.wav in Resources */,
+				354E60251FF344BF00BE7615 /* Buen Provecho.wav in Resources */,
 				35C802821FE4EB0400774752 /* Lil Boy.wav in Resources */,
 				356FBDD51FB004CB00D97851 /* Assets.xcassets in Resources */,
 				35C802881FE4EB0400774752 /* Yell.wav in Resources */,
+				354E60341FF346A100BE7615 /* Leaves.wav in Resources */,
 				35C8028C1FE4EB0400774752 /* Handle It.wav in Resources */,
 				35C802851FE4EB0400774752 /* Protocol.wav in Resources */,
 				35C802891FE4EB0400774752 /* Excited.wav in Resources */,
 				35C802811FE4EB0400774752 /* Mmmm.wav in Resources */,
+				354E60371FF346A100BE7615 /* Cry.wav in Resources */,
 				35F949A61FDCC8820026C241 /* Where Charles.wav in Resources */,
+				354E603A1FF346A100BE7615 /* Morenga.wav in Resources */,
 				35F949931FDC92FD0026C241 /* Hamburger.PNG in Resources */,
 				35C8028B1FE4EB0400774752 /* I Can't.wav in Resources */,
 				35F949921FDC92FD0026C241 /* miamibeach-logo.png in Resources */,
 				35C802831FE4EB0400774752 /* Coffee Stir.wav in Resources */,
+				354E603B1FF346A100BE7615 /* Bully.wav in Resources */,
+				354E60261FF344BF00BE7615 /* Flea Bags.wav in Resources */,
+				354E603C1FF346A100BE7615 /* Hell.wav in Resources */,
 				356FBDD31FB004CB00D97851 /* Main.storyboard in Resources */,
 				35C8028A1FE4EB0400774752 /* Doing This.wav in Resources */,
+				354E60391FF346A100BE7615 /* For What.wav in Resources */,
 				35F949941FDC92FD0026C241 /* MBWallMural_DeanFinal.jpg in Resources */,
 				35C8028E1FE4EB0400774752 /* Laugh.wav in Resources */,
+				354E60331FF346A100BE7615 /* Eric.wav in Resources */,
 				35C802871FE4EB0400774752 /* Boys.wav in Resources */,
 				35C8028D1FE4EB0400774752 /* Serious.wav in Resources */,
 				35F949A81FDCC8820026C241 /* Chihuahua 2.wav in Resources */,
@@ -386,6 +441,7 @@
 			files = (
 				35F949B11FDE518F0026C241 /* PensionCalcViewController.swift in Sources */,
 				35F949B31FE230920026C241 /* PensMenuViewController.swift in Sources */,
+				354E60221FF3435B00BE7615 /* SoundBoard2ViewController.swift in Sources */,
 				356FBDD01FB004CB00D97851 /* QuotesViewController.swift in Sources */,
 				35625C1D1FB4133100B4E33D /* AddQuotesViewController.swift in Sources */,
 				35F949971FDC98540026C241 /* HomeViewController.swift in Sources */,

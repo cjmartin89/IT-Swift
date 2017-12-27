@@ -10,8 +10,6 @@ import UIKit
 import AVFoundation
 
 class SoundBoardViewController: UIViewController {
-
-//    var selectedSoundFileName : String = ""
     
     var player : AVAudioPlayer?
 
