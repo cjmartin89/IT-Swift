@@ -47,17 +47,17 @@ class AddQuotesViewController: UIViewController, UITextFieldDelegate {
         let convertedDate = retrieveDate()
         
         let quote = Quote()
-        quote.Person = person!
-        quote.Quote = text!
+        quote.person = person!
+        quote.quote = text!
         
         let parameters = [
-            "Quote": text,
-            "Person": person,
+            "quote": text,
+            "person": person,
             "DateTime": convertedDate
         ]
         
-        let url = "http://18.220.140.97:8080/api/quotes/create/"
-        Alamofire.request(url, method:.post, parameters:parameters, encoding: JSONEncoding.default).responseString { response in
+        let url = "https://calm-savannah-82295.herokuapp.com/quotes"
+        Alamofire.request(url, method:.post, parameters:parameters as Parameters, encoding: JSONEncoding.default).responseString { response in
             switch response.result {
             case .success:
                 print(response)

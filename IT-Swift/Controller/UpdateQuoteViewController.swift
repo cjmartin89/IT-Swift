@@ -43,17 +43,17 @@ class UpdateQuoteViewController: UIViewController {
         let convertedDate = retrieveDate()
         
         let quote = Quote()
-        quote.Person = person!
-        quote.Quote = text!
+        quote.person = person!
+        quote.quote = text!
         
         let parameters = [
-            "Quote": text,
-            "Person": person,
+            "quote": text,
+            "person": person,
             "DateTime": convertedDate
         ]
         
         let url = Quotes_URL + String(primaryKey) + "/"
-        Alamofire.request(url, method:.put, parameters:parameters, encoding: JSONEncoding.default).responseString { response in
+        Alamofire.request(url, method:.put, parameters:parameters as Parameters, encoding: JSONEncoding.default).responseString { response in
             switch response.result {
             case .success:
                 print(response)

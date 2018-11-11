@@ -35,7 +35,7 @@ class QuotesViewController: UIViewController, UITableViewDataSource, UITableView
         quotesSearchBar.delegate = self
         quotesSearchBar.returnKeyType = UIReturnKeyType.done
 
-        retrieveQuotes(url: "http://18.220.140.97:8080/api/quotes/")
+        retrieveQuotes(url: "https://calm-savannah-82295.herokuapp.com/quotes/")
 
         self.quotesTableView.addSubview(self.refreshControl)
         
@@ -47,8 +47,8 @@ class QuotesViewController: UIViewController, UITableViewDataSource, UITableView
         if segue.identifier == "updateQuoteSegue" {
             let updateQuoteViewController = segue.destination as! UpdateQuoteViewController
             if let indexPath = self.quotesTableView.indexPathForSelectedRow {
-            updateQuoteViewController.person = quotesArray[indexPath.row].Person
-            updateQuoteViewController.quote = quotesArray[indexPath.row].Quote
+                updateQuoteViewController.person = quotesArray[indexPath.row].person
+                updateQuoteViewController.quote = quotesArray[indexPath.row].quote
             updateQuoteViewController.PK = quotesArray[indexPath.row].PK
             }
         }
@@ -62,7 +62,7 @@ class QuotesViewController: UIViewController, UITableViewDataSource, UITableView
 
     lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action: #selector(QuotesViewController.handleRefresh(refreshControl:)), for: UIControlEvents.valueChanged)
+        refreshControl.addTarget(self, action: #selector(QuotesViewController.handleRefresh(refreshControl:)), for: UIControl.Event.valueChanged)
 
         return refreshControl
     }()
@@ -81,11 +81,11 @@ class QuotesViewController: UIViewController, UITableViewDataSource, UITableView
 
         if self.isSearching {
             //            text = self.filteredQuotes[indexPath.row].Person
-            cell.textLabel?.text = self.filteredQuotes[indexPath.row].Quote
-            cell.detailTextLabel?.text = self.filteredQuotes[indexPath.row].Person
+            cell.textLabel?.text = self.filteredQuotes[indexPath.row].quote
+            cell.detailTextLabel?.text = self.filteredQuotes[indexPath.row].person
         } else {
-            cell.textLabel?.text = quotesArray[indexPath.row].Quote
-            cell.detailTextLabel?.text = quotesArray[indexPath.row].Person
+            cell.textLabel?.text = quotesArray[indexPath.row].quote
+            cell.detailTextLabel?.text = quotesArray[indexPath.row].person
         }
         
 
@@ -136,7 +136,7 @@ class QuotesViewController: UIViewController, UITableViewDataSource, UITableView
             isSearching = true
             self.quotesSearchBar.showsCancelButton = true
             let lower = quotesSearchBar.text!.lowercased()
-            filteredQuotes = quotesArray.filter({$0.Person.lowercased().hasPrefix(lower)})
+            filteredQuotes = quotesArray.filter({$0.person.lowercased().hasPrefix(lower)})
             quotesTableView.reloadData()
         }
     }
@@ -172,15 +172,17 @@ class QuotesViewController: UIViewController, UITableViewDataSource, UITableView
                 print("Success! Got the quotes")
                 
                 let quotesJSON : JSON = JSON(response.result.value!)
+                
+                print(quotesJSON)
 
                 for (_, _) in quotesJSON {
-                    let quoteResult = quotesJSON[self.quoteIndex]["Quote"].stringValue
-                    let personResult = quotesJSON[self.quoteIndex]["Person"].stringValue
+                    let quoteResult = quotesJSON[self.quoteIndex]["quote"].stringValue
+                    let personResult = quotesJSON[self.quoteIndex]["person"].stringValue
                     let pkResult = quotesJSON[self.quoteIndex]["pk"].intValue
 
                     let quote = Quote()
-                    quote.Person = personResult
-                    quote.Quote = quoteResult
+                    quote.person = personResult
+                    quote.quote = quoteResult
                     quote.PK = pkResult
                     
                     quotesArray.append(quote)

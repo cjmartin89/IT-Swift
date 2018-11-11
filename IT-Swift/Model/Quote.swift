@@ -8,13 +8,13 @@
 
 import Foundation
 
-let Quotes_URL = "http://18.220.140.97:8080/api/quotes/"
+let Quotes_URL = "https://calm-savannah-82295.herokuapp.com/quotes/"
 var quotesArray : [Quote] = [Quote]()
 
 class Quote {
     
-    var Quote : String = ""
-    var Person : String = ""
+    var quote : String = ""
+    var person : String = ""
     var PK : Int = 0
 }
 
